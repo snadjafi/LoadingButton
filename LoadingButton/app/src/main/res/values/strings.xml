@@ -1,4 +1,3 @@
 <resources>
-    <string name="app_name">LoadingButton</string>
-    <string name="default_loading">Loading…</string>
+    <string name="app_name">Loading Button Sample</string>
 </resources>
