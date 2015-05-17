@@ -1,4 +1,4 @@
-package com.snad.loadingbutton.widget;
+package com.snad.loadingbutton;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -18,8 +18,6 @@ import android.widget.RelativeLayout;
 import android.widget.TextSwitcher;
 import android.widget.TextView;
 import android.widget.ViewSwitcher;
-
-import com.snad.loadingbutton.R;
 
 public class LoadingButton extends RelativeLayout {
 
