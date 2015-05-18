@@ -12,6 +12,7 @@
         android:measureAllChildren="false"/>
 
     <ProgressBar
+        style="?android:attr/progressBarStyle"
         android:id="@+id/pb_progress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

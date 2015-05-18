@@ -5,7 +5,7 @@ android {
     buildToolsVersion "22.0.1"
 
     defaultConfig {
-        applicationId "com.snad.loadingbutton"
+        applicationId "com.snad.sample"
         minSdkVersion 16
         targetSdkVersion 22
         versionCode 1

@@ -113,7 +113,7 @@ public class LoadingButton extends RelativeLayout {
 
     public void showButtonText() {
         if (mIsLoadingShowing) {
-            mProgressBar.setVisibility(View.GONE);
+            mProgressBar.setVisibility(View.INVISIBLE);
             mTextSwitcher.setText(mButtonText);
             mIsLoadingShowing = false;
             setEnabled(true);
@@ -131,6 +131,7 @@ public class LoadingButton extends RelativeLayout {
 
         mProgressBar = (ProgressBar) findViewById(R.id.pb_progress);
         mTextSwitcher = (TextSwitcher) findViewById(R.id.pb_text);
+
 
         if (attrs != null) {
             TypedArray a = context.getTheme().obtainStyledAttributes(
