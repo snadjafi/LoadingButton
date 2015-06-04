@@ -2,6 +2,8 @@
 
 LoadingButton is a custom view that shows and hide progressBar with text animation. You can specify the text animation direction.
 
+![LoadingButton](https://github.com/snadjafi/LoadingButton/blob/master/images/screenshot.png)
+
 ## Sample Usage
 
 ```java
