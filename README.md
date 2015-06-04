@@ -6,6 +6,19 @@ LoadingButton is a custom view that shows and hides a ProgressBar with text anim
 
 ## Sample Usage
 
+```xml
+<com.snad.loadingbutton.LoadingButton
+    android:id="@+id/first"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#BE6E46"
+    app:pbLoadingText="@string/loading"
+    app:pbProgressColor="#F9D8FB"
+    app:pbText="@string/click_me"
+    app:pbTextColor="#8A4FFF"
+    app:pbTextSize="16sp"/>
+```
+
 ```java
 @Override protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
