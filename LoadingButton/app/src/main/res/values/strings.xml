@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">Loading Button Sample</string>
-    <string name="loading">Loading</string>
-    <string name="click_me">Click Me</string>
+    <string name="loading">LOADING</string>
+    <string name="click_me">CLICK ME</string>
 </resources>

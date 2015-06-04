@@ -66,7 +66,7 @@ public class LoadingButton extends RelativeLayout {
         return mTypeface;
     }
 
-    public void setProgressColor(@ColorRes int colorRes) {
+    public void setProgressColor(int colorRes) {
         mProgressBar.getIndeterminateDrawable()
                 .mutate()
                 .setColorFilter(colorRes, PorterDuff.Mode.SRC_ATOP);
