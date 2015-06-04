@@ -2,6 +2,40 @@
 
 LoadingButton is a custom view that shows and hide progressBar with text animation. You can specify the text animation direction.
 
+## Sample Usage
+
+```java
+@Override protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.activity_main);
+    findViewById(R.id.first).setOnClickListener(this);
+
+    LoadingButton button = new LoadingButton(this);
+    LoadingButton.ViewSwitcherFactory factory = new LoadingButton.ViewSwitcherFactory(this,
+            getResources().getColor(android.R.color.white),
+            44F,
+            Typeface.DEFAULT);
+    button.setTextFactory(factory);
+
+    button.setText("Press");
+    button.setLoadingText("wait...");
+    button.setBackgroundColor(Color.RED);
+    button.setOnClickListener(this);
+    button.setAnimationInDirection(LoadingButton.IN_FROM_LEFT);
+    ((ViewGroup) findViewById(R.id.root)).addView(button);
+}
+
+@Override public void onClick(final View v) {
+    ((LoadingButton) v).showLoading();
+
+    v.postDelayed(new Runnable() {
+        @Override public void run() {
+            ((LoadingButton) v).showButtonText();
+        }
+    }, 2000);
+}
+```
+
 ##License
 
     Copyright 2015 Shervin Najafi
