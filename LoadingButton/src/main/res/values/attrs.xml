@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LoadingButton">
+        <attr name="pbText" format="string"/>
+        <attr name="pbLoadingText" format="string"/>
+        <attr name="pbTextSize" format="dimension"/>
+        <attr name="pbTextColor" format="color|reference"/>
+        <attr name="pbProgressColor" format="color|reference"/>
+    </declare-styleable>
+</resources>
